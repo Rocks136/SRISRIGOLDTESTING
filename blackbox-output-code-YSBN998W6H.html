@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sri Gold Testing Shop - Test Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Test Results</h1>
+        <label for="serialNo">Enter Serial Number:</label>
+        <input type="text" id="serialNo">
+        <button onclick="searchResult()">Search</button>
+        <div id="resultDisplay"></div>
+        <div id="ownerResults" style="display: none;">
+            <h2>Update Daily Test Results (Owner)</h2>
+            <form id="resultForm">
+                <label for="newSerial">Serial No:</label>
+                <input type="text" id="newSerial" required>
+                <label for="resultText">Result:</label>
+                <textarea id="resultText" required></textarea>
+                <button type="submit">Add/Update Result</button>
+            </form>
+            <table id="resultTable">
+                <thead><tr><th>Serial No</th><th>Result</th><th>Actions</th></tr></thead>
+                <tbody id="resultRows"></tbody>
+            </table>
+            <button onclick="addColumn('resultTable')">Add Column</button>
+        </div>
+        <button onclick="window.location.href='welcome.html'">Back to Welcome</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

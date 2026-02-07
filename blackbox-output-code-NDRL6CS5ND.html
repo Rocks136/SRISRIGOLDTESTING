@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sri Gold Testing Shop - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json"> <!-- For PWA install -->
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Sri Sri Gold Testing Shop</h1>
+        <form id="loginForm">
+            <label for="username">Username (Your Name for Customers, 'Bhanuchand' for Owner):</label>
+            <input type="text" id="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Login</button>
+            <button type="button" id="signupBtn">Sign Up (For New Customers)</button>
+            <button type="button" id="forgotBtn">Forgot Password</button>
+            <button type="button" id="fingerprintBtn">Login with Fingerprint</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

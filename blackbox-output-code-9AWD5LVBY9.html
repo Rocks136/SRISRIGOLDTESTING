@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sri Gold Testing Shop - Owner Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Owner Dashboard</h1>
+        <p>Total Customers Logged In Today: <span id="loginCount">0</span></p>
+        <h2>Users Update</h2>
+        <table id="userTable">
+            <thead><tr><th>Username</th><th>Mobile</th><th>Password</th><th>Actions</th></tr></thead>
+            <tbody id="userRows"></tbody>
+        </table>
+        <button onclick="addColumn('userTable')">Add Column</button>
+        <h2>Edit Page Content</h2>
+        <form id="editForm">
+            <label for="page">Page:</label>
+            <select id="page"><option>details.html</option></select>
+            <label for="content">New Content:</label>
+            <textarea id="content" required></textarea>
+            <button type="submit">Update</button>
+        </form>
+        <button onclick="window.location.href='welcome.html'">Back to Welcome</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

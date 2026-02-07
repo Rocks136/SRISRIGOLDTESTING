@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sri Gold Testing Shop - Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback</h1>
+        <form id="feedbackForm">
+            <label for="feedbackText">Your Feedback:</label>
+            <textarea id="feedbackText" rows="4" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <div id="feedbackList" style="display: none;">
+            <h2>All Feedback (Owner View)</h2>
+            <table id="feedbackTable">
+                <thead><tr><th>User</th><th>Feedback</th><th>Date</th><th>Actions</th></tr></thead>
+                <tbody id="feedbackRows"></tbody>
+            </table>
+            <button onclick="addColumn('feedbackTable')">Add Column</button>
+        </div>
+        <button onclick="window.location.href='welcome.html'">Back to Welcome</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
